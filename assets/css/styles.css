@@ -87,7 +87,7 @@ html{
 	scroll-behavior: smooth;
 }
 :root{
-	--primary: #c3a552;
+	--primary: #D9B29C;
 	--secondary: #6ab04c;
 	--alt: #D9D3C7;
 	--dark: #000000;
@@ -103,6 +103,8 @@ header, section, main, footer{
 .inner__wrapper{
 	width: 100%;
 	max-width: 1250px;
+	padding-left: 2.4rem;
+	padding-right: 2.4rem;
 }
 h1, h2, h3, h4, h5, h6, .font-play, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, .font-play *{
 	font-family: 'FreightBigProBook';
@@ -128,7 +130,54 @@ h1, h2, h3, h4, h5, h6, .font-play, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, .font-pl
 .text-secondary{
 	color: var(--secondary);
 }
+.text-dark-alt{
+	color: #404040;
+}
 .bg-primary{
+	background: var(--primary);
+}
+
+.btn-link-m{
+	position: relative;
+	display: inline-block;
+}
+.btn-link-m:before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	border-radius: 5px;
+	background: var(--dark);
+}
+
+.img_overlay_light{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--light);
+	z-index: 1;
+}
+
+main, footer{
+	position: relative;
+	z-index: 1;
+}
+header{
+	z-index: 5;
+}
+.page_overlay{
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	clip-path: circle(0% at 50% 100%);
 	background: var(--primary);
 }
 
@@ -136,6 +185,21 @@ h1, h2, h3, h4, h5, h6, .font-play, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, .font-pl
 .hero-grid{
 	margin-top: -3.5rem;
 }
+.hero_header .word{
+	padding-left: 4px;
+	padding-right: 4px;
+	overflow: hidden;
+	line-height: 1.15;
+}
+.hero_img{
+	transform-origin: left;
+}
+
+/* Projects */
+.project_card_caption{
+	opacity: 0;
+}
+
 
 .inner__footer{
 	position: fixed;
@@ -145,4 +209,49 @@ h1, h2, h3, h4, h5, h6, .font-play, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, .font-pl
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+@media only screen and (max-width: 1100px){
+	.hero-grid{
+		margin-top: 0rem;
+	}
+}
+@media only screen and (max-width: 767px){
+	.inner__wrapper{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.menu_open_wrapper{
+		position: relative;
+		z-index: 11;
+	}
+	.menu_wrapper{
+		position: fixed;
+		top: 0;
+		right: -120vw;
+		width: 100%;
+		height: 100vh;
+		background: var(--light);
+		/*transition: 0.5s;*/
+		z-index: 10;
+		transform: skewX(-10deg);
+	}
+	/*.menu_wrapper.active{
+		right: 0;
+	}*/
+	.menu_icon{
+		display: inline-block;
+		transition: 0.5s;
+	}
+	.menu_icon.active{
+		transform: translateY(12px);
+	}
+	.menu_wrapper nav li a{
+		opacity: 0;
+		transform: translate(0px, 60px);
+	}
+	.menu_wrapper h2 .char{
+		transform: translate(0px, 50px) skewX(-30deg);
+		opacity: 0.2;
+	}
 }
