@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex" />
+	<meta name="description" content="This is a demo of a meta description.">
+	<!-- OGs -->
+	<meta property="og:title" content="Company name" />
+	<meta property="og:type" content="video.movie" />
+	<meta property="og:url" content="https://www.example.com/title/" />
+	<meta property="og:image" content="https://www.example1.com/title/company-name.jpg" />
+	<title>Projects | Riju</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+	<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<!-- scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+</head>
+<body data-barba="wrapper">
+	<header>
+		<div class="inner__wrapper pt-6 md:pt-10 pb-6">
+			<div class="w-full grid grid-cols-2 md:grid-cols-3">
+				<div class="col-span-1 h-full flex flex-col justify-center">
+					<a href="index.html" aria-lebl="" class="text-lg"><b>RS</b> <span class="text-xs">2022</span></a>
+				</div>
+				<div class="menu_wrapper col-span-1 h-full flex flex-col md:justify-center md:items-center p-8 md:p-0">
+					<h2 class="mb-8 md:mb-6 md:text-center text-3xl font-semibold overflow-hidden" data-break>Designer Portfolio</h2>
+					<nav class="w-full">
+						<ul class="w-full flex md:items-center md:justify-center gap-4 md:gap-8 flex-col md:flex-row">
+							<li class="transition-all text-sm"><a href="about.html" class="btn-link-m">About</a></li>
+							<li class="transition-all text-sm"><a href="skills.html" class="btn-link-m">Skills</a></li>
+							<li class="transition-all text-sm"><a href="experience.html" class="btn-link-m">Experience</a></li>
+							<li class="transition-all text-sm"><a href="projects.html" class="btn-link-m">Projects</a></li>
+							<li class="transition-all text-sm"><a href="contact.html" class="btn-link-m">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-span-1 h-full md:flex items-center justify-end hidden">
+					<a href="contact.html" class="btn-link">Let’s Connect</a>
+				</div>
+				<div class="menu_open_wrapper col-span-1 h-full md:hidden items-center justify-end flex">
+					<a id="menu_open" href="#" class="btn-link" aria-label="menu open">
+						<i class="menu_icon ri-menu-3-fill"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main id="main" data-barba="container" data-barba-namespace="project">
+		<section id="home">
+			<div class="inner__wrapper py-10 md:py-16">
+				<h1 class="hero_header text-5xl md:text-7xl xl:text-8xl mb-6 md:mb-20 overflow-hidden leading-3" data-break>Projects</h1>
+				<div class="w-full grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-16 mb-16 md:mb-36 full_time">
+					<div class="col-span-4 project_card">
+						<div class="project_card_img w-full h-44 sm:h-56 md:h-64 overflow-hidden mb-1 relative">
+							<img src="images/projects/deck.jpg" alt="Deck-Max Australia" class="w-full h-full object-cover">
+							<div class="img_overlay_light"></div>
+						</div>
+						<h4 class="project_card_caption"><a href="https://deck-max.com.au/" target="_blank" class="body-font text-sm">Deck<span class="font-play">-</span>Max<i class="ri-external-link-line text-xs ml-1 inline-block"></i></a></h4>
+					</div>
+					<div class="col-span-4 project_card">
+						<div class="project_card_img w-full h-44 sm:h-56 md:h-64 overflow-hidden mb-1 relative">
+							<img src="images/projects/sprinkler.jpg" alt="EZ FLO Injection systems" class="w-full h-full object-cover">
+							<div class="img_overlay_light"></div>
+						</div>
+						<h4 class="project_card_caption"><a href="https://ezfloinjection.com/" target="_blank" class="body-font text-sm">EZ<span class="font-play">-</span>FLO Injection USA<i class="ri-external-link-line text-xs ml-1 inline-block"></i></a></h4>
+					</div>
+					<div class="col-span-4 project_card">
+						<div class="project_card_img w-full h-44 sm:h-56 md:h-64 overflow-hidden mb-1 relative">
+							<img src="images/projects/jewellery.jpg" alt="Shyam Sundar Co Jewellers" class="w-full h-full object-cover">
+							<div class="img_overlay_light"></div>
+						</div>
+						<h4 class="project_card_caption"><a href="http://shyamsundarco.com/" target="_blank" class="body-font text-sm">Shyam Sundar Co Jewellers<i class="ri-external-link-line text-xs ml-1 inline-block"></i></a></h4>
+					</div>
+					<div class="col-span-4 project_card">
+						<div class="project_card_img w-full h-44 sm:h-56 md:h-64 overflow-hidden mb-1 relative">
+							<img src="images/projects/speech.jpg" alt="Care speech pathology" class="w-full h-full object-cover">
+							<div class="img_overlay_light"></div>
+						</div>
+						<h4 class="project_card_caption"><a href="https://www.carespeechpathology.com.au/" target="_blank" class="body-font text-sm">Care Speech Pathology<i class="ri-external-link-line text-xs ml-1 inline-block"></i></a></h4>
+					</div>
+					<div class="col-span-4 project_card">
+						<div class="project_card_img w-full h-44 sm:h-56 md:h-64 overflow-hidden mb-1 relative">
+							<img src="images/projects/physio.jpg" alt="Beyond Physio" class="w-full h-full object-cover">
+							<div class="img_overlay_light"></div>
+						</div>
+						<h4 class="project_card_caption"><a href="https://www.beyondphysio.sg/" target="_blank" class="body-font text-sm">Beyond Physio<i class="ri-external-link-line text-xs ml-1 inline-block"></i></a></h4>
+					</div>
+					<div class="col-span-4 project_card">
+						<div class="project_card_img w-full h-44 sm:h-56 md:h-64 overflow-hidden mb-1 relative">
+							<img src="images/projects/kid-dress.jpg" alt="kids dress" class="w-full h-full object-cover">
+							<div class="img_overlay_light"></div>
+						</div>
+						<h4 class="project_card_caption"><a href="http://smfashion.co.in/" target="_blank" class="body-font text-sm">SM Fashion<i class="ri-external-link-line text-xs ml-1 inline-block"></i></a></h4>
+					</div>
+				</div>
+
+				<div class="w-full grid grid-cols-1 md:grid-cols-2">
+					<h2 class="w-full body-font text-5xl md:text-7xl xl:text-8xl mb-6 md:mb-20 overflow-hidden" data-break>Few More</h2>
+					<div class="w-full md:mt-12 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-12 md:gap-16 mb-16 full_time">
+						<div class="col-span-4">
+							<a href="https://slcn.com.au/" target="_blank" class="w-full row_card flex items-center gap-2 mb-4">
+								<h4 class="body-font">SLCN</h4>
+								<p><i class="ri-external-link-line text-xs inline-block"></i></p>
+							</a>
+							<a href="https://momoiam.in/" target="_blank" class="w-full row_card flex items-center gap-2 mb-4">
+								<h4 class="body-font">Momo I Am</h4>
+								<p><i class="ri-external-link-line text-xs inline-block"></i></p>
+							</a>
+							<a href="https://avd-group.in/" target="_blank" class="w-full row_card flex items-center gap-2 mb-4">
+								<h4 class="body-font">AVD</h4>
+								<p><i class="ri-external-link-line text-xs inline-block"></i></p>
+							</a>
+							<a href="https://gunjanrecreations.com/" target="_blank" class="w-full row_card flex items-center gap-2 mb-4">
+								<h4 class="body-font">Gunjan Recreation</h4>
+								<p><i class="ri-external-link-line text-xs inline-block"></i></p>
+							</a>
+							<a href="https://www.scopiqs.com.au/" target="_blank" class="w-full row_card flex items-center gap-2 mb-4">
+								<h4 class="body-font">ScopiQs</h4>
+								<p><i class="ri-external-link-line text-xs inline-block"></i></p>
+							</a>
+							<a href="http://brotatihealthyworld.com/" target="_blank" class="w-full row_card flex items-center gap-2 mb-4">
+								<h4 class="body-font">Brotati Healthy World</h4>
+								<p><i class="ri-external-link-line text-xs inline-block"></i></p>
+							</a>
+							<a href="http://bohotiquegdr.com/" target="_blank" class="w-full row_card flex items-center gap-2 mb-4">
+								<h4 class="body-font">Bohotique GDR</h4>
+								<p><i class="ri-external-link-line text-xs inline-block"></i></p>
+							</a>
+							<a href="hificollective.com.au/" target="_blank" class="w-full row_card flex items-center gap-2 mb-4">
+								<h4 class="body-font">HiFi Collectives</h4>
+								<p><i class="ri-external-link-line text-xs inline-block"></i></p>
+							</a>
+							<a href="https://www.downtothewire.net.au/" target="_blank" class="w-full row_card flex items-center gap-2 mb-12">
+								<h4 class="body-font">Down To The Wire</h4>
+								<p><i class="ri-external-link-line text-xs inline-block"></i></p>
+							</a>
+							<a href="https://docs.google.com/document/d/1NbOeewXc0yhXkMzuthgiR_0XMwuPE5s-h0kx6sUL1ec/edit?usp=sharing" target="_blank" class="w-full row_card flex items-center gap-2 mb-4">
+								<h4 class="body-font">View all</h4>
+								<p><i class="ri-external-link-line text-xs inline-block"></i></p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div class="page_overlay"></div>
+	<footer>
+		<div class="inner__wrapper pt-12 md:pt-16 pb-6"> 
+			<p class="mb-3 text-center text-xs md:text-sm">Connect with me</p>
+			<ul class="flex items-center justify-center gap-6 text-lg">
+				<li><a href="https://www.behance.net/rijusharma1" target="_blank" aria-label="behance"><i class="ri-behance-line"></i></a></li>
+				<li><a href="https://github.com/rijushm" target="_blank" aria-label="GitHub"><i class="ri-github-line"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/rijusharma1/" target="_blank" aria-label="Linkedin"><i class="ri-linkedin-line"></i></a></li>
+				<li><a href="https://m.facebook.com/therijusharma" target="_blank" aria-label="Facebook"><i class="ri-facebook-line"></i></a></li>
+				<li><a href="https://www.instagram.com/therijusharma/" target="_blank" aria-label="instagram"><i class="ri-instagram-line"></i></a></li>
+				<li><a href="https://api.whatsapp.com/send?phone=6290333182" target="_blank" aria-label="whatsapp"><i class="ri-whatsapp-line"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+	<script type="text/javascript" src="assets/js/nav.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>
